@@ -1,0 +1,283 @@
+
+
+
+*   {
+
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    animation: animate 3s ease  alternate;
+    }
+
+    @keyframes animate{
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+
+        100%{opacity: 1;
+            transform: translateY(0);
+        
+        }
+    }
+
+.fondo{
+    background-image: url(paisaje-digital-en-atardecer_3840x2160_xtrafondos.com.jpg );
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fondo::before{
+    opacity: 0.5;
+    z-index: -1;
+    position: absolute;
+}
+
+
+
+
+
+header{
+    
+    
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    color: white;
+
+    
+}
+
+
+
+header nav a{
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+text-decoration: none;
+outline: none;
+color: white;
+position: relative;
+font-size: 20px;
+margin: 0 15px;
+top: 15px;
+transition: all .3s ease;
+font-weight: 300;
+
+}
+
+header nav a:hover{
+    
+    font-size: 27px;
+    color: pink;
+       text-shadow: 0 0 5px pink, 0 0 15px pink, 0 0 45px pink;
+       text-decoration: underline;
+}
+
+
+.directorios{
+    position: relative;
+    transform: translateX(438%);
+    display: flex;
+    bottom: 40%;
+    font-size: 24px;
+    gap: 10px;
+    
+}
+
+.directorios a{
+    color: white;
+}
+
+.directorios a:hover{
+    color: gold;
+    
+}
+
+
+.linea{
+    width: 560px;
+    height: 2px;
+    
+}
+
+.Teo{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    position: relative;
+    
+}
+
+.Teo img{
+    display: block;
+        width: 202%;
+        max-height: 33%;
+        margin: auto; /* Centra la imagen horizontalmente */
+       position: relative;
+       bottom: 33%;
+       right: 50%;
+       opacity: 0.5;
+       
+}
+
+.Teo h1{
+    color: white;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    min-height: 90vh;
+    font-family: "Italiana", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  
+}
+
+
+@keyframes beat{
+    0% {
+        font-size: 50px;
+        
+    }
+}
+
+section h1{
+    color: white;
+    font-size: 70px;
+    position: relative;
+    top: 160px;
+    text-shadow: 0 0 10px white, 0 0 20px white;
+    animation: beat 3s linear infinite alternate;
+}
+
+section h2{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 25px;
+    text-shadow: 0 0 5px gold, 0 0 15px gold;
+
+}
+
+section button{
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    background-color: rgb(3, 3, 30);
+    color: white;
+    text-shadow: 0 0 5px darkblue;
+    box-shadow: 0 0 5px darkblue;
+    transition: all .2s linear;
+    position: relative;
+    bottom: 90px;
+
+}
+
+
+section button:hover{
+    background-color: black;
+    color: white;
+    
+    
+}
+
+
+main{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+main img{
+    width: 80%;
+    height: 550px;
+    position: static;
+    top: 10px;
+
+}
+
+.Singers{
+    display: grid;
+    place-items: center;
+    color: white;
+    font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  top: 0px;
+   text-shadow: 0 0 5px darkslategray, 0 0 15px darkslategray;
+   background-image: url(paisaje-digital-en-atardecer_3840x2160_xtrafondos.com.jpg);
+   padding: 5px;
+   
+}
+
+.imagen{
+    position: relative;
+    width: 70%;
+    height: 550px;
+}
+
+.imagen img{
+    width: 100%;
+    height: 550px;
+    display: block;
+    background-color: black;
+}
+
+.texto{
+    position: absolute;
+    bottom: 0;
+    background-color: tra;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    align-items: center;
+    padding: 10px 0;
+    opacity: 0;
+    font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+    pointer-events: none;
+    transition: opacity .4s linear;
+}
+
+.imagen:hover  .texto{
+    opacity: 1;
+    
+}
+
+.imagen:hover img{
+    opacity: 0.5;
+    
+}
+
+
+
+.texto h3{
+    font-size: 50px;
+    display: grid;
+    place-items: center;
+    transform: translateY(-680%);
+    text-shadow: 0 0 5px black, 0 0 15px black;
+    
+    
+    
+}
+
+
+
+.texto p{
+    font-size: 30px;
+    display: grid;
+    place-items: center;
+}
